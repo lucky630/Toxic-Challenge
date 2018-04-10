@@ -17,6 +17,6 @@ Mistakes:
 5. last overfitting on the public leaderboard.
 
 Leason Learned and top winner techniques:
-Train time translation
+1. Train time translation
 
 Special thanks to my teammate (Utsav) for all the support.
