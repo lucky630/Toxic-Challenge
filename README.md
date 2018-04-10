@@ -1,5 +1,6 @@
 # Toxic-Challenge-Solution
-Ranked 139 in the public and 528 in the private leaderboard. entered 15 days before competition end.
+Ranked 139 in the public and 528 in the private leaderboard. entered 15 days before competition end.link to the competition:
+https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 
 Scripts used for the kaggle toxic comment challenge.
 1. some comment cleaning done including replacement of incorrect or misspeled words.removing puncuations,ipaddress,hyperlinks,username from the comments.
