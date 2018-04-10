@@ -1,5 +1,6 @@
 # Toxic-Challenge-Solution
 Ranked 139 in the public and 528 in the private leaderboard. entered 15 days before competition end.
+
 Scripts used for the kaggle toxic comment challenge.
 1. some comment cleaning done including replacement of incorrect or misspeled words.removing puncuations,ipaddress,hyperlinks,username from the comments.
 2. spell correction including replacement of the words which are not found in the embedding file.
