@@ -16,7 +16,7 @@ Mistakes:
 2. using nltk lemmatizer and stemming is a big mistake because it removed the context words which are used by the rnn models.
 3. using only single embedding files for all the NN model which lead to highly correlated 1 layer models. have to use the fasttext,common wiki crawl,glove twitter.
 4. start ensembling on the last day
-5. last overfitting on the public leaderboard.
+5. last overfitting on the public leaderboard means instead of depend upon our local cv accuracy gave high preference to the models which scored well on public leaderboard(which only show accuracy result for 25% data).
 
 Leason Learned and top winner techniques:
 1. Different Embedding - Have to use different type of embeddings for the model diversity.using same type of embedding leads to correlated models. using fasttext,glove for common-crawl,wikipedia and twitter,BPEmb embedding solve the words not in vocabulary problem. this is the subword embedding which try to solve the unknown word problem.LexVec is one more word embedding created using the wikipedia corpus.
