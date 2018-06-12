@@ -19,6 +19,13 @@ Mistakes:
 5. last overfitting on the public leaderboard.
 
 Leason Learned and top winner techniques:
-1. Train time translation
-
-Special thanks to my teammate (Utsav) for all the support.
+1. Different Embedding - Have to use different type of embeddings for the model diversity.using same type of embedding leads to correlated models. using fasttext,glove for common-crawl,wikipedia and twitter,BPEmb embedding solve the words not in vocabulary problem. this is the subword embedding which try to solve the unknown word problem.LexVec is one more word embedding created using the wikipedia corpus.
+2. pseudo_labelling - if accuracy is high near to 98 to 99 percent then use the pseudo-labelling technique and use the test high probability prediction from the top model and use them as the training set.
+3. data augmentation - where we have to create the artificial data from the existing data.first split the training data into train and validation set and then do the data augmentation on the training set and used the validation data to get the idea that your model will work well on augmented data or not.
+4. translation train time augmentation - translate the english comment to french,german or latin then again translate back to english by this way model will learn the noise in the data.
+4.(i) translate the english training data to some other language like (french,german,spanish) then used word embedding for those language for training.
+5. concating Embedding - try multiple embedding (glove,fasttext) in one single model like (image RGB channels).concating two embedding together improve the score.
+see which word are not in fasttext then find those words in glove and add it to the fasttext embedding file.
+6. Ensemble different type of models in the first layer of stacking try to use subset of models in all the ensembles. then in the 2nd layer of stacking average those first layer output or use different model on that.
+7. try to combine different embeddings to make the 300d embedding to 900d like combined(Fasttext,glove,word2vec) vectors.
+8. try to use the bayesian optimization to find hyperparameters of the model.
